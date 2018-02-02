@@ -18,6 +18,7 @@
     "browser-location": "^1.0.1",
     "plott": "0.0.5",
     "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "webpack": "^3.10.0"
   }
 }

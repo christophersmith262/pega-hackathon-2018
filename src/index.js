@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from 'react-dom';
 const location = require('browser-location');
 
 class LocationEmitter {
@@ -15,8 +17,11 @@ class LocationEmitter {
 
   emit() {
     location.get((err, position) => {
-      console.log(err);
       console.log(position);
+      render(
+        <div>
+          {position.coords.latitude}, {position.coords.longitude}, {position.coords.altitude}
+        </div>, document.body);
     });
   }
 
