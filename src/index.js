@@ -8,9 +8,9 @@ class LocationEmitter {
 
   start() {
     this.emit();
-    setInterval(() => {
+    /*setInterval(() => {
       this.emit();
-    }, this.interval);
+    }, this.interval);*/
   }
 
   emit() {

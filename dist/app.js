@@ -136,12 +136,10 @@ var LocationEmitter = function () {
   }, {
     key: 'start',
     value: function start() {
-      var _this = this;
-
       this.emit();
-      setInterval(function () {
-        _this.emit();
-      }, this.interval);
+      /*setInterval(() => {
+        this.emit();
+      }, this.interval);*/
     }
   }, {
     key: 'emit',
