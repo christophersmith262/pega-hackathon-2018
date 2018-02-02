@@ -3,14 +3,14 @@ const location = require('browser-location');
 class LocationEmitter {
 
   construct(interval) {
-    this.interval = interval ? interval : 500;
+    this.interval = interval ? interval : 1000;
   }
 
   start() {
     this.emit();
     setInterval(() => {
       this.emit();
-    }, 5000);
+    }, this.interval);
   }
 
   emit() {

@@ -131,7 +131,7 @@ var LocationEmitter = function () {
   _createClass(LocationEmitter, [{
     key: 'construct',
     value: function construct(interval) {
-      this.interval = interval ? interval : 500;
+      this.interval = interval ? interval : 1000;
     }
   }, {
     key: 'start',
@@ -141,7 +141,7 @@ var LocationEmitter = function () {
       this.emit();
       setInterval(function () {
         _this.emit();
-      }, 5000);
+      }, this.interval);
     }
   }, {
     key: 'emit',
